@@ -1,0 +1,37 @@
+{{define "index/words-display"}}
+<div class="results-container">
+    <div class="button">English</div>
+    <div class="words-list">
+        {{if .WordsEnglish}}{{range .WordsEnglish}}
+        <div class="word">{{.Word}}</div>
+        {{end}}
+    </div>
+    {{else}}
+</div>
+{{end}}
+</div>
+<div class="results-container">
+    <div class="button button-login">French</div>
+    {{if .WordsFrench}}{{range .WordsFrench}}
+    <div class="words-list">
+        <div class="word">{{.Word}}</div>
+    </div>
+    {{end}} {{end}}
+</div>
+<div class="results-container">
+    <div class="button button-login">Dutch</div>
+    {{if .WordsDutch}}{{range .WordsDutch}}
+    <div class="words-list">
+        <div class="word">{{.Word}}</div>
+    </div>
+    {{end}} {{end}}
+</div>
+<div class="results-container">
+    <div class="button button-login">German</div>
+    {{if .WordsGerman}}{{range .WordsGerman}}
+    <div class="words-list">
+        <div class="word">{{.Word}}</div>
+    </div>
+    {{end}} {{end}}
+</div>
+{{end}}

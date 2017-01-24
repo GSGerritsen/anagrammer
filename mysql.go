@@ -31,10 +31,10 @@ func SearchDBForAnagrams(word string) ([]Word, error) {
 	for rows.Next() {
 		word := Word{}
 		err := rows.Scan(
-			&word.id,
-			&word.word,
-			&word.alphabetized_version,
-			&word.language,
+			&word.ID,
+			&word.Word,
+			&word.AlphabetizedVersion,
+			&word.Language,
 		)
 
 		if err != nil {
@@ -66,10 +66,10 @@ func SearchDBForLanguageSpecificAnagrams(word, language string) ([]Word, error) 
 	for rows.Next() {
 		word := Word{}
 		err := rows.Scan(
-			&word.id,
-			&word.word,
-			&word.alphabetized_version,
-			&word.language,
+			&word.ID,
+			&word.Word,
+			&word.AlphabetizedVersion,
+			&word.Language,
 		)
 
 		if err != nil {

@@ -21,10 +21,6 @@ func InsertFileContentsIntoDB(filename, lang string) {
 
 		word := scanner.Text()
 		alphabetizedVersion := alphabetize(word)
-		/*
-			newWord := NewWord(word, alphabetizedVersion, lang)
-			fmt.Printf("word: %s\nalphabetized version: %s\nlanguage: %s\n", newWord.word, newWord.alphabetized_version, newWord.language)
-		*/
 		_, err := globalMySQLDB.Exec(
 			`
 			REPLACE INTO words (

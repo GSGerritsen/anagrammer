@@ -6,17 +6,17 @@ import (
 )
 
 type Word struct {
-	id                   int
-	word                 string
-	alphabetized_version string
-	language             string
+	ID                  int
+	Word                string
+	AlphabetizedVersion string
+	Language            string
 }
 
-func NewWord(id int, word, alphabetized_version, language string) *Word {
+func NewWord(id int, word, alphabetizedVersion, language string) *Word {
 	return &Word{
 		id,
 		word,
-		alphabetized_version,
+		alphabetizedVersion,
 		language,
 	}
 }
