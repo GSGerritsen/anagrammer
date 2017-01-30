@@ -13,10 +13,7 @@ func PrintAnagrams(word string) {
 		panic(err)
 	}
 
-	fmt.Printf("Anagrams for %s:\n", word)
-	for i := 0; i < len(words); i++ {
-		fmt.Printf("%s\n", words[i].Word)
-	}
+	fmt.Printf("%s\n", string(words))
 }
 
 func SearchOnInput() {

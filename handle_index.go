@@ -1,6 +1,7 @@
 package main
 
 import (
+	//"encoding/json"
 	"github.com/julienschmidt/httprouter"
 	"net/http"
 )
@@ -22,4 +23,13 @@ func HandleWordSearch(w http.ResponseWriter, r *http.Request, _ httprouter.Param
 	RenderTemplate(w, r, "index/home", map[string]interface{}{
 		"WordsEnglish": anagrams,
 	})
+}
+
+func HandleHomeGet(w http.ResponseWriter, r *http.Request, params httprouter.Params) {
+	anagramsListJSON, err := SearchDBForAnagrams(params.ByName("word"))
+	if err != nil {
+		panic(err)
+	}
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.Write(anagramsListJSON)
 }

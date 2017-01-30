@@ -1,0 +1,46 @@
+<html>
+
+<body>
+    <nav class="navbar" role="navigation">
+        <div class="navbar navbar-wrap">
+            <div class="logo">
+                <a class="logo-text" href="/">ANAGRAMMER</a>
+            </div>
+            <div class="buttons-container">
+                <a class="button button-login" href="/login">Login</a>
+                <a class="button button-signup" href="/sign-up">Sign up</a>
+                <a class="github-icon" target="_blank" href="https://github.com/GSGerritsen/anagrammer"> <i class="fa fa-github 4x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="yield-container">
+        <div id="root">
+            <div class="anagram-input-wrapper">
+                <form v-on:submit.prevent="getWords">
+                    <input v-model="wordInput" type="text" id="anagramInput" name="word" placeholder="Enter a word to find its anagrams!" class="anagram-input" autocomplete="off">
+                    <div class="anagram-input-bottom"></div>
+                </form>
+            </div>
+            <div class="languages-container">
+                <div class="results-container">
+                    <div class="button">English</div>
+                    <transition name="fade">
+                        <div class="words-list">
+                            <div v-for="word in words" class="word">
+                                <% word.Word %>
+                            </div>
+                        </div>
+                    </transition>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+    <script type="text/javascript" src="/assets/js/focus-on-load.js" async></script>
+    <script type="text/javascript" src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

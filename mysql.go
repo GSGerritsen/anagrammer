@@ -2,7 +2,7 @@ package main
 
 import (
 	"database/sql"
-
+	"encoding/json"
 	_ "github.com/go-sql-driver/mysql"
 )
 
@@ -15,12 +15,14 @@ func ConnectToMySQL() (*sql.DB, error) {
 	return connection, connection.Ping()
 }
 
-func SearchDBForAnagrams(word string) ([]Word, error) {
+func SearchDBForAnagrams(word string) ([]byte, error) {
 	rows, err := globalMySQLDB.Query(
 		`
 		SELECT * FROM words
-		WHERE alphabetized_version = ?
+		WHERE word != ?
+		AND alphabetized_version = ?
 		`,
+		word,
 		alphabetize(word),
 	)
 	if err != nil {
@@ -44,7 +46,13 @@ func SearchDBForAnagrams(word string) ([]Word, error) {
 		words = append(words, word)
 	}
 
-	return words, nil
+	jsonResponse, err := json.MarshalIndent(words, "", " ")
+	if err != nil {
+		return nil, err
+	}
+
+	return jsonResponse, nil
+
 }
 
 func SearchDBForLanguageSpecificAnagrams(word, language string) ([]Word, error) {

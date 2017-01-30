@@ -174,7 +174,8 @@ body {
 }
 
 .anagram-input {
-	width: 255px;
+	padding-left: 96px;
+	width: 450px;
 	cursor: text;
 	font-size: 1rem;
 	font-weight: 300;
@@ -185,7 +186,7 @@ body {
 .anagram-input-bottom {
 	display: block;
 	border-bottom: 1px solid #4a544d;
-	width: 450px;
+
 }
 
 
@@ -261,6 +262,16 @@ input[type="text"] {
 
 :-ms-input-placeholder {  
    color: #4a544d;  
+}
+
+
+/* TRANSITIONS */
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-active  {
+  opacity: 0
 }
 
 

@@ -26,10 +26,16 @@ func NewRouter() *httprouter.Router {
 }
 
 func main() {
+	//InsertFileContentsIntoDB("francais.txt", "french")
 	router := NewRouter()
 
 	router.Handle("GET", "/", HandleHome)
+	router.Handle("GET", "/search/:word", HandleHomeGet)
 	router.Handle("POST", "/", HandleWordSearch)
+
+	// Testing routes for Vue stuff
+
+	router.Handle("GET", "/vue-tests", HandleVueTests)
 
 	router.ServeFiles(
 		"/assets/*filepath",
