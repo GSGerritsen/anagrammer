@@ -1,3 +1,4 @@
-window.onload = function() {
+/*window.onload = function() {
   document.getElementById("anagramInput").focus();
 };
+*/

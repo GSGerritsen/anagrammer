@@ -1,12 +1,12 @@
 html {
-	font-family: 'geogrotesque', sans-serif;
-	-webkit-font-smoothing: antialiased;
+    font-family: 'geogrotesque', sans-serif;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 a {
     text-decoration: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 body {
@@ -15,92 +15,84 @@ body {
     color: #333333;
     margin: 0 auto;
     background-color: #ffffff;
-
     height: 100%;
     /* so that setting width:100% on divs will make it actually take 100% */
     min-width: 100%;
 }
 
 .navbar {
-	position:relative;
-    right:0;
-    top:0;
+    position: relative;
+    right: 0;
+    top: 0;
     width: 100%;
-    height:auto;
-    padding:0rem;
-    box-sizing:border-box;
+    height: auto;
+    padding: 0rem;
+    box-sizing: border-box;
     z-index: 5;
 }
 
 .navbar .navbar-wrap {
-	background: #FFFFFF;
-    width:100%;
-    position:relative;
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-pack:justify;
-    -webkit-justify-content:space-between;
-    -ms-flex-pack:justify;
-    justify-content:space-between;
-    -webkit-box-align:center;
-    -webkit-align-items:center;
-    -ms-flex-align:center;
-    align-items:center;
-    -webkit-box-orient:horizontal;
-    -webkit-box-direction:normal;
-    -webkit-flex-direction:row;
-    -ms-flex-direction:row;
-    flex-direction:row;
-    padding:27px 45px;
-
+    background: #FFFFFF;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 27px 45px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.32);
-    box-sizing:border-box
+    box-sizing: border-box
 }
 
-
-.logo {
-
-}
+.logo {}
 
 .logo .logo-text {
-	font-size:1.5rem;
-    color:#3E3E3E;
-    font-weight:500
+    font-size: 1.5rem;
+    color: #3E3E3E;
+    font-weight: 500
 }
 
 .buttons-container {
-	display:-webkit-box;
-	width: 350;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-align:center;
-    -webkit-align-items:center;
-    -ms-flex-align:center;
-    align-items:center;
-    -webkit-box-pack:center;
-    -webkit-justify-content:center;
-    -ms-flex-pack:center;
-    justify-content:center;
-    -webkit-box-orient:horizontal;
-    -webkit-box-direction:normal;
-    -webkit-flex-direction:row;
-    -ms-flex-direction:row;
-    flex-direction:row
+    display: -webkit-box;
+    width: 350;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row
 }
 
 .button {
-	display: block;
+    display: block;
     position: relative;
-
     width: 95px;
     padding: 0;
-
     margin-left: auto;
     margin-right: auto;
-
     font-size: 1rem;
     font-weight: normal;
     text-align: center;
@@ -108,33 +100,31 @@ body {
     line-height: 40px;
     color: #ffffff;
     background: #00ac6b;
-
     border: none;
-    box-sizing:border-box;
+    box-sizing: border-box;
     border-radius: 4px;
     transition: all 0.35s;
 }
 
 .button:hover {
-	color: #00ac6b;
+    color: #00ac6b;
     background: #FFFFFF;
     border: 1px solid #00ac6b;
-
 }
 
 .button-login {
-	color: #00ac6b;
+    color: #00ac6b;
     background: #FFFFFF;
     border: 1px solid #00ac6b;
 }
 
 .button-login:hover {
-	color: #ffffff;
+    color: #ffffff;
     background: #00ac6b;
 }
 
 .github-icon {
-	font-size: 3rem;
+    font-size: 3rem;
     text-align: center;
     vertical-align: middle;
     margin-left: auto;
@@ -142,137 +132,346 @@ body {
     color: #4a544d;
     transition: all 0.35s;
 }
+
 .github-icon:hover {
-	color: #333a35;
+    color: #333a35;
 }
 
-
-
-
-
-
-
 .anagram-input-wrapper {
-	margin-top: 170px;
-	position:relative;
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-pack:justify;
-    -webkit-justify-content:center;
-    -ms-flex-pack:justify;
-    justify-content:center;
-    -webkit-box-align:center;
-    -webkit-align-items:center;
-    -ms-flex-align:center;
-    align-items:center;
-    -webkit-box-orient:horizontal;
-    -webkit-box-direction:normal;
-    -webkit-flex-direction:row;
-    -ms-flex-direction:row;
+    margin-top: 170px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
 }
 
 .anagram-input {
-	padding-left: 96px;
-	width: 450px;
-	cursor: text;
-	font-size: 1rem;
-	font-weight: 300;
-	line-height: 35px;
-	text: #4a544d;
+    width: 450px;
+    cursor: text;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: center;
+    text: #4a544d;
 }
 
 .anagram-input-bottom {
-	display: block;
-	border-bottom: 1px solid #4a544d;
-
+    display: block;
+    border-bottom: 1px solid #4a544d;
 }
-
 
 .languages-container {
-	margin-top: 45px;
-	margin-left: 210px;
-	margin-right: 210px;
-
-	position:relative;
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-pack:justify;
-    -webkit-justify-content:center;
-    -ms-flex-pack:justify;
-    justify-content:center;
-    -webkit-box-align:center;
-    -webkit-align-items:center;
-    -ms-flex-align:center;
-    align-items:center;
-    -webkit-box-orient:horizontal;
-    -webkit-box-direction:normal;
-    -webkit-flex-direction:row;
-    -ms-flex-direction:row;
+    margin-top: 45px;
+    margin-left: 210px;
+    margin-right: 210px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: center;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
 }
 
-.language-button {
-
-}
+.language-button {}
 
 .results-container {
-	margin: 0 auto;
-	height: 250px;
+    margin: 0 auto;
+    height: 250px;
 }
 
 .words-list {
-	min-height: 20px;
-	text-align: center;
-	margin-top: 30px;
+    min-height: 20px;
+    text-align: center;
+    margin-top: 30px;
 }
-
 
 .word {
-	width: auto;
-	margin-bottom: 10px;
-	display: block;
-
+    width: auto;
+    margin-bottom: 10px;
+    display: block;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
 }
-
 
 input[type="text"] {
-		border: none;
-	    outline: none;
-        background: transparent;
-    
-        -webkit-appearance: none; 
-        box-shadow: none !important;
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    box-shadow: none !important;
 }
 
+input[type="email"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+input[type="password"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
 
 ::-webkit-input-placeholder {
-   color: #4a544d;
+    color: #4a544d;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color: #4a544d;  
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #4a544d;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #4a544d;  
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #4a544d;
 }
 
-:-ms-input-placeholder {  
-   color: #4a544d;  
+:-ms-input-placeholder {
+    color: #4a544d;
 }
+
+
+/* Make placeholder text disapper on focus */
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+
+/* Firefox 18- */
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+
+/* Firefox 19+ */
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+
+/* oldIE ;) */
 
 
 /* TRANSITIONS */
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
-}
-.fade-enter, .fade-leave-active  {
-  opacity: 0
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .8s
 }
 
+.fade-enter,
+.fade-leave-active {
+    opacity: 0
+}
 
 
+/* MODAL TEST */
+
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.modal-container {
+    width: 350px;
+    height: auto;
+    margin: 0px auto;
+    padding: 52px 30px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+}
+
+.modal-header {
+    margin: 25px 25px;
+    color: #42b983;
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    margin: 25px 25px;
+}
+
+.modal-default-button {
+    float: right;
+}
+
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+    opacity: 0;
+}
+
+.modal-leave-active {
+    opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* LOGIN/SIGNUP FORMS */
+
+.form-input {
+    width: 400px;
+    cursor: text;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.form-input-bottom {
+    display: block;
+    border-bottom: 1px solid #A59FA5;
+}
+
+.form-input:focus + .form-input-bottom {
+    display: block;
+    border-bottom: 1px solid #006C44;
+}
+
+.input-spacing {
+    margin-bottom: 18px;
+}
+
+.login-footer {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.flex-row-centered {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.textfield-input {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.tb-input {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    transition: border-color .1s;
+}
+
+.tb-input-large {
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 2px;
+}
+
+.form-button {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+    color: #ffffff;
+    background: #00ac6b;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    transition: all 0.35s;
+}
+
+.form-button:hover {
+    color: #FFFFFF;
+    background: #006C44;
+    cursor: pointer;
+}
+
+.form-button:focus {
+    outline: 0 !important;
+}
+
+.form-error {
+    display: block;
+    width: auto;
+    font-size: 0.85rem;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 36px;
+    color: #ffffff;
+    background: #ee3333;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 35px;
+    transition: all 0.35s;
+}
